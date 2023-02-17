@@ -10,60 +10,123 @@
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
 </head>
 
-<body>
-    <img src="TDTempLogo.png" class="max-w-xs">
+<body class="bg-green-600">
+    <div class="flex flex-row align-middle">
+
+    </div>
+    <div class=" flex flew-row font-bold place-content-center">
+        <img src="TDTempLogo.png" class="place-self-center flex-2 w-40 rounded-full border-4">
+
+
+        <a class="flex-1 place-self-center text-black text-center h-fit bg-yellow-300 p-2 m-2  rounded-full border-2 border-black"
+            href="newrequest.html">
+            Post Request
+        </a>
+
+
+        <a class="flex-1 place-self-center text-center text-black h-fit bg-yellow-300 p-2 m-2 rounded-full border-2 border-black"
+            href="profile.html">
+            My Tutor Profile
+        </a>
+        <a
+            class="flex-1 place-self-center text-black bg-yellow-300 h-fit text-center p-2 m-2 rounded-full border-2 border-black">
+            View Active Requests
+        </a>
+
+    </div>
     <br>
-    <h1>
-        TutorDash - Ensign
-    </h1>
-    <button class="border-4">
-        Post Request
-    </button>
-    <button class="border-4">
-        My Tutor Requests
-    </button>
-    <button class="border-4">
-        My Tutor Profile
-    </button>
-    <button class="border-4">
-        View active requests
-    </button>
-    <br>
-    <h2>
-        Request a Tutor
-    </h2>
-    <form>
-        Name:
-        <input type="text" placeholder="John Doe" class="placeholder:italic">
-        <br>
-        <br>
-        Phone Number:
-        <input type="text" placeholder="888-888-8888" class="placeholder:italic">
-        <br>
-        <br>
-        Subject/Class
-        <input type="text" placeholder="MAT 210" class="placeholder:italic">
-        <br>
-        <br>
-        What do you need help with?
-        <br>
-        <input type="text" placeholder="Calculus Homework"
-            class="placeholder:italic w-1/2 h-1/4 placeholder:align-start">
-        <br>
-        When can you meet with tutor?
-        <input type="text" placeholder="Monday 1:00PM to 5:30PM" class="placeholder:italic">
-        When do your need the tutor by?
-        <input type="text" placeholder="Thursday 1:00PM" class="placeholder:italic">
-        <br>
-        <br>
-        Communication:
-        <br>
-        OnCampus--<input type="checkbox">
-        Zoom Call--<input type="checkbox">
-        FaceTime--<input type="checkbox">
-        <br><br>
-        <Button class="border-4">SUBMIT</Button>
-    </form>
+    <div class="flex flew-row">
+
+        <h2
+            class="flex-1 text-4xl place-self-center bg-green-600  font-semibold justify-between text-white p-2 text-center">
+            Request a Tutor
+        </h2>
+        <div class="flex-1 flex flex-col items-center text-white">
+            <div>
+
+                <!-- First Row -->
+                <div class="flex flex-row w-1/2 ">
+
+                    <div class="flex-1 p-2 ">
+                        <div>
+
+                            Name:
+                        </div>
+                        <div>
+                            <input type="text" placeholder="John Doe"
+                                class="rounded-xl border-2 border-black placeholder:italic ">
+
+                        </div>
+                    </div>
+                    <div class=" flex-1 p-2">
+                        <div>
+
+                            Phone Number:
+                        </div>
+                        <div>
+
+                            <input type="text" placeholder="888-888-8888"
+                                class="rounded-xl border-2 border-black placeholder:italic ">
+                        </div>
+                    </div>
+                    <div class="flex-1 p-0 py-2 pr-2 ">
+                        <div>
+                            Email:
+                        </div>
+                        <div>
+                            <input type="text" placeholder="example@email.coom"
+                                class="rounded-xl border-2 border-black placeholder:italic ">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="px-2 ">
+
+                    Subject/Class:
+                    <br>
+                    <input type="text" placeholder="MAT 210"
+                        class="rounded-xl border-2 border-black w-full placeholder:italic">
+                </div>
+                <br>
+                <div class="p-2 ">
+                    What do you need help with?
+                    <br>
+                    <input type="text" placeholder="Calculus Homework"
+                        class="placeholder:italic w-full placeholder:absolute rounded-xl border-2 border-black ">
+                    <br>
+                </div>
+                <div class="p-2">
+                    When can you meet with your tutor?
+                    <br>
+                    <input type="text" placeholder="Monday 1:00PM to 5:30PM"
+                        class="rounded-xl border-2 border-black w-full placeholder:italic">
+                </div>
+                <div class="p-2">
+                    How do you want to meet?
+                    <br>
+                    <div class="py-1">
+                        OnCampus
+                        <input type="checkbox" class="mr-4 rounded-xl border-2 border-black ">
+                        Zoom Call
+                        <input type="checkbox" class="mr-4 rounded-xl border-2 border-black ">
+                        FaceTime
+                        <input type="checkbox" class="mr-4 rounded-xl border-2 border-black ">
+                    </div>
+                </div>
+
+                <div class="p-2">
+                    Do you need a tutor by a certain time?
+                    <br>
+                    <input type="text" placeholder="Thursday 1:00PM"
+                        class="rounded-xl border-2 border-black w-full placeholder:italic">
+                </div>
+                <Button
+                    class="border-4 w-full m-2 p-2 text-black rounded-full border-1  border-black font-bold  bg-yellow-300">Post
+                    Request</Button>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
