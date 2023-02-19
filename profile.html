@@ -10,58 +10,118 @@
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
 </head>
 
-<body>
-    <img src="TDTempLogo.png" class="max-w-xs">
+<body class="bg-green-600">
+    <div class=" flex flew-row font-bold place-content-center">
+        <img src="TDTempLogo.png" class="place-self-center flex-2 w-40 rounded-full border-4">
+
+
+        <a class="flex-1 place-self-center text-black text-center h-fit bg-yellow-300 p-2 m-2  rounded-full border-2 border-black"
+            href="new_request.html">
+            Post Request
+        </a>
+
+
+        <a class="flex-1 place-self-center text-center text-black h-fit bg-yellow-300 p-2 m-2 rounded-full border-2 border-black"
+            href="profile.html">
+            My Tutor Profile
+        </a>
+        <a class="flex-1 place-self-center text-black bg-yellow-300 h-fit text-center p-2 m-2 rounded-full border-2 border-black"
+            href="active_requests.html">
+            View Active Requests
+        </a>
+
+    </div>
     <br>
-    <h1>
-        TutorDash - Ensign
-    </h1>
-    <button class="border-4">
-        Post Request
-    </button>
-    <button class="border-4">
-        My Tutor Requests
-    </button>
-    <button class="border-4">
-        My Tutor Profile
-    </button>
-    <button class="border-4">
-        View active requests
-    </button>
     <br>
-    <br>
-    <h2>
-        Create Tutor Profile
-    </h2>
-    <form>
-        Name:
-        <input type="text" placeholder="John Doe" class="placeholder:italic">
-        <br>
-        <br>
-        My Subjects
-        <input type="text" placeholder="CS 105, IT 110, MAT 210" class="placeholder:italic">
-        <br>
-        <br>
-        Profile Photo:
-        <input type="file">
-        <br>
-        <br>
-        Time I can tutor:
-        <input type="text" placeholder="Monday 1:00PM to 5:30PM, Tuesday 11:00AM to 12:50PM"
-            class="placeholder:italic w-1/2">
-        <br>
-        <br>
-        Notify me if there's a request in my subjects at this time:
-        <input type="checkbox">
-        <br><br>
-        Communication:
-        <br>
-        OnCampus--<input type="checkbox">
-        Zoom Call--<input type="checkbox">
-        FaceTime--<input type="checkbox">
-        <br><br>
-        <Button class="border-4">SUBMIT</Button>
-    </form>
+    <div class="flex flew-row">
+
+        <div
+            class="flex-1 text-4xl place-self-center bg-green-600  font-semibold justify-between text-white p-2 text-center">
+            Create Tutor Profile
+        </div>
+        <div class="flex-1 flex flex-col items-center text-white">
+            <div>
+
+                <!-- First Row -->
+                <div class="flex flex-row w-1/2 ">
+
+                    <div class="flex-1 p-2 ">
+                        <div>
+
+                            Name:
+                        </div>
+                        <div>
+                            <input type="text" placeholder="John Doe"
+                                class="rounded-xl border-2 border-black placeholder:italic ">
+
+                        </div>
+                    </div>
+
+                    <div class=" flex-1 p-2">
+                        <div>
+
+                            Phone Number:
+                        </div>
+                        <div>
+
+                            <input type="text" placeholder="888-888-8888"
+                                class="rounded-xl border-2 border-black placeholder:italic ">
+                        </div>
+                    </div>
+                    <div class="flex-1 p-0 py-2 pr-2 ">
+                        <div>
+                            Email:
+                        </div>
+                        <div>
+                            <input type="text" placeholder="example@email.coom"
+                                class="rounded-xl border-2 border-black placeholder:italic ">
+
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div>
+                    Profile Photo:
+                    <input type="file">
+                </div>
+                <br>
+                <div class="px-2 ">
+                    Subjects I can tutor:
+                    <br>
+                    <input type="text" placeholder="CS 105, IT 110, MAT 210"
+                        class="rounded-xl border-2 border-black w-full placeholder:italic">
+                </div>
+                <div class="p-2">
+                    Times I can meet:
+                    <br>
+                    <input type="text" placeholder="Monday 1:00PM to 5:30PM, Tuesday 11:00AM to 12:50PM"
+                        class="rounded-xl border-2 border-black w-full placeholder:italic">
+                </div>
+                <div class="p-2">
+                    Communication:
+                    <br>
+                    <div class="py-1">
+                        OnCampus
+                        <input type="checkbox" class="mr-4 rounded-xl border-2 border-black ">
+                        Zoom Call
+                        <input type="checkbox" class="mr-4 rounded-xl border-2 border-black ">
+                        FaceTime
+                        <input type="checkbox" class="mr-4 rounded-xl border-2 border-black ">
+                    </div>
+                </div>
+                <div class="p-2">
+                    Notify me with relevant requests:
+                    <input type="checkbox" class="mr-4 rounded-xl border-2 border-black ">
+                </div>
+                <br>
+                <Button
+                    class="border-4 w-full m-2 p-2 text-black rounded-full border-1  border-black font-bold  bg-yellow-300">
+                    Create Profile
+                </Button>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>

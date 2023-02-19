@@ -11,39 +11,124 @@
 </head>
 
 <body>
-    <img src="TDTempLogo.png" class="max-w-xs">
-    <br>
-    <h1>
-        TutorDash - Ensign
-    </h1>
-    <button class="border-4">
-        Post Request
-    </button>
-    <button class="border-4">
-        My Tutor Requests
-    </button>
-    <button class="border-4">
-        My Tutor Profile
-    </button>
-    <button class="border-4">
-        View active requests
-    </button>
-    <br>
-    <h2>
-        Request a Tutor
-    </h2>
-    <div id="card">
-    </div>
+
+    <body class="bg-green-600">
+        <div class=" flex flew-row font-bold place-content-center">
+            <img src="TDTempLogo.png" class="place-self-center flex-2 w-40 rounded-full border-4">
 
 
-</body>
-<script>
-    function Card() {
-        name = "Jim";
-        subject = "CS 160";
-        time = "Monday 3:00 to 9:00";
+            <a class="flex-1 place-self-center text-black text-center h-fit bg-yellow-300 p-2 m-2  rounded-full border-2 border-black"
+                href="new_request.html">
+                Post Request
+            </a>
 
-    }
-</script>
+
+            <a class="flex-1 place-self-center text-center text-black h-fit bg-yellow-300 p-2 m-2 rounded-full border-2 border-black"
+                href="profile.html">
+                My Tutor Profile
+            </a>
+            <a class="flex-1 place-self-center text-black bg-yellow-300 h-fit text-center p-2 m-2 rounded-full border-2 border-black"
+                href="active_requests.html">
+                View Active Requests
+            </a>
+
+        </div>
+        <br>
+        <h2 class="text-white font-bold text-center text-4xl mb-8">
+            Students Looking For Tutors
+        </h2>
+        <div id="card"
+            class="flex flex-row rounded-xl border-2 bg-yellow-300 justify-around border-black p-2 mx-4 my-1">
+            <div id="name">
+                Walter
+            </div>
+            <div id="subject">
+                CS 160
+            </div>
+            <div id="task">
+                Essay
+            </div>
+            <div id="time">
+                Mon 12:30
+            </div>
+        </div>
+
+
+    </body>
+    <script>
+        CreateList(10);
+        function RandomCard() {
+            document.getElementById("name").innerText = GetName();
+            document.getElementById("subject").innerText = GetSubject();
+            document.getElementById("task").innerText = GetTask();
+            document.getElementById("time").innerText = GetTime();
+        }
+        function CreateList(n) {
+            for (i = 0; i < n; i++) {
+
+                card = document.getElementById("card");
+                dupCard = card.cloneNode(true);
+                document.body.appendChild(dupCard);
+                RandomCard();
+            }
+        }
+        function GetName() {
+            switch (Math.floor(Math.random() * 10)) {
+                case (0): return "Jim";
+                case (1): return "Sara";
+                case (2): return "David";
+                case (3): return "Janet";
+                case (4): return "Peter";
+                case (5): return "Tammy";
+                case (6): return "Jose";
+                case (7): return "Amy";
+                case (8): return "Frank";
+                case (9): return "Peggy";
+            }
+        }
+        function GetSubject() {
+            switch (Math.floor(Math.random() * 10)) {
+                case (0): return "IT 110";
+                case (1): return "ID 200";
+                case (2): return "MATH 210";
+                case (3): return "DCC 180";
+                case (4): return "BUS 150";
+                case (5): return "IT 110";
+                case (6): return "ID 200";
+                case (7): return "MATH 210";
+                case (8): return "DCC 180";
+                case (9): return "BUS 150";
+            }
+        }
+        function GetTask() {
+            switch (Math.floor(Math.random() * 10)) {
+                case (0): return "Essay";
+                case (1): return "Exam";
+                case (2): return "Homework";
+                case (3): return "Presentation";
+                case (4): return "Assignment";
+                case (5): return "Essay";
+                case (6): return "Exam";
+                case (7): return "Homework";
+                case (8): return "Presentation";
+                case (9): return "Assignment";
+            }
+        }
+        function GetTime() {
+
+            switch (Math.floor(Math.random() * 10)) {
+                case (0): return "Mon 8:00";
+                case (1): return "Tues 9:00";
+                case (2): return "Wed 10:00";
+                case (3): return "Thu 11:00";
+                case (4): return "Fri 12:00";
+                case (5): return "Sat 1:00";
+                case (6): return "Mon 2:00";
+                case (7): return "Tue 3:00";
+                case (8): return "Thu 4:00";
+                case (9): return "Wed 5:00";
+            }
+        }
+    </script>
 
 </html>
